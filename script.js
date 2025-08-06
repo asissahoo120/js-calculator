@@ -19,7 +19,7 @@ function calculate() {
     }
 
     try {
-        displayString = eval(displayString);
+        displayString = eval(displayString).toString();
         display.value = displayString;
     } catch (error) {
         display.value = "Error!";
@@ -37,3 +37,4 @@ function cut() {
     displayString = displayString.slice(0, -1);
     display.value = display.value.slice(0, -1);
 }
+
