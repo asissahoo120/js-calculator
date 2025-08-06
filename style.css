@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #dfdfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    place-items: center;
+}
+
+button{
+    height: 80px;
+    width: 80px;
+    border: none;
+    border-radius: 50%;
+    background-color: #4e4e50;
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+#display{
+    width: 100%;
+    overflow: auto;
+    height: 100px;
+    background-color: #1a1a1c;
+    color: whitesmoke;
+    border: none;
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: right;
+}
+
+#display:focus{
+    outline: none;
+}
+
+.calculator{
+    background-color: #1a1a1c;
+    width: 400px;
+    border: 2px solid;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 10px 8px 20px rgb(42, 39, 39);
+}
+
+.symbols{
+    background-color: #c3083f;
+}
+
+.funcSymbols{
+    background-color: #bcbcbc;
+    color: #1a1a1c;
+}
+
+.symbols:hover{
+    background-color: #c3084089;
+}
+
+.symbols:active{
+    background-color: #d48099;
+}
+
+.funcSymbols:hover{
+    background-color: #b8eeeaeb;
+    /* color: whitesmoke; */
+}
+
+.funcSymbols:active{
+    background-color: #bcbcbc92;
+}
+
+button:hover{
+    background-color: #89898a;
+}
+
+button:active{
+    background-color: #4e4e50;
+}

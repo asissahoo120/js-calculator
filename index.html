@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="calculator">
+        <input id="display" type="text" readonly>
+        <div class="buttons">
+            <button class="funcSymbols" onclick="clearDisplay()">AC</button>
+            <button class="funcSymbols" onclick="appendToDisplay('/100*')"><i class="fa-solid fa-percent"></i></button>
+            <button class="funcSymbols" onclick="cut()"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="symbols" onclick="appendToDisplay('/')"><i class="fa-solid fa-divide"></i></button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button class="symbols" onclick="appendToDisplay('*')"><i class="fa-solid fa-xmark"></i></button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button class="symbols" onclick="appendToDisplay('-')"><i class="fa-solid fa-minus"></i></button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button class="symbols" onclick="appendToDisplay('+')"><i class="fa-solid fa-plus"></i></button>
+            <button onclick="appendToDisplay('00')">00</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button class="symbols" onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
